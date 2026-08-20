@@ -32,12 +32,12 @@
 </head>
 <body>
 <div class="app">
-<header class="header"><div class="logo"><div class="logo-icon">📡</div><div>HAM-ADIF Analyzer Pro(BETA) by (c)DG9SR</div></div><div style="display:flex;align-items:center;gap:12px"><div class="badge">100% lokal · kostenlos</div><button id="infoBtn" class="btn" style="padding:8px 12px;font-size:13px" title="Info & Datenschutz">ℹ️ Info & Kontakt</button></div></header>
+<header class="header"><div class="logo"><div class="logo-icon">📡</div><div>HAM-ADIF Analyzer Pro(BETA.v8/26) by (c)DG9SR</div></div><div style="display:flex;align-items:center;gap:12px"><div class="badge">100% lokal · kostenlos</div><button id="infoBtn" class="btn" style="padding:8px 12px;font-size:13px" title="Info & Datenschutz">ℹ️ Info & Kontakt</button></div></header>
 <section class="hero"><h1>Dein HAM Log.<br><span>Wir reparieren es wieder.</span></h1><p>ADIF-Datei analysieren, konvertieren sowie Formatfehler erkennen und ausschließlich eindeutige Strukturfehler sicher direkt im Browser reparieren – ohne QSO-Inhalte umzuschreiben – full stack ADIF tauglich für alle Anwendungen.</p></section>
 <label class="upload" id="upload"><input type="file" id="file" accept=".adi,.adif,.txt"><div class="upload-icon">📂</div><h2>ADIF-Datei hier ablegen</h2><p>oder Datei auf deinem Rechner auswählen</p><span class="file-button">Datei auswählen</span><div class="privacy">🔒 Die Datei verlässt deinen Rechner nicht.</div></label>
 <div class="message" id="message"></div>
 <section id="results">
-<div class="print-title"><h1>HAM-ADIF Analyzer Pro by (c)DG9SR – Analysebericht</h1><p id="printMeta"></p></div>
+<div class="print-title"><h1>HAM-ADIF Analyzer Pro(BETA.v8/26) by (c)DG9SR – Analysebericht</h1><p id="printMeta"></p></div>
 <div class="result-head"><div><h2>Log-Analyse</h2><div class="filename" id="filename"></div><div id="repairStatus"></div></div><div class="actions"><button class="btn" id="reset">Neue Datei</button></div></div>
 <div class="health-summary"><div class="health-card" id="structureCard"><div class="health-card-label">Struktur</div><div class="health-card-value" id="structureScore">—</div><div class="health-card-sub" id="structureNote">Wird geprüft.</div></div><div class="health-card" id="logHealthCard"><div class="health-card-label">Log Health</div><div class="health-card-value" id="logHealthScore">—</div><div class="health-card-sub" id="logHealthNote">Offene fachliche Warnungen.</div></div></div>
 <div class="health"><div class="health-top"><div class="health-title"><div class="health-icon">🩺</div><div><h3>Log Health</h3><div class="health-sub">Health zeigt offene echte Warnungen. SAFE kann repariert werden; Hinweise werden nur angezeigt.</div></div></div><div class="score" id="healthScore">100%</div></div><div class="issue-list" id="issues"></div><div class="health-note" id="healthNote"></div></div>
