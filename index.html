@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ADIF HAM Analyzer Pro by DG9SR</title>
+<title>HAM-ADIF Analyzer Pro(BETA.v8/26) by (c)DG9SR</title>
 <style>
 :root{--bg:#080b12;--panel:#101620;--panel2:#151d29;--border:#222d3d;--text:#edf2f7;--muted:#8995a7;--green:#61d7a4;--blue:#58b9ff;--yellow:#f3c969;--red:#ff7070}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;background:radial-gradient(circle at 50% -20%,#17372f 0,#080b12 45%);color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input{font:inherit}.app{width:min(1120px,calc(100% - 30px));margin:auto;padding:28px 0 70px}.header{display:flex;justify-content:space-between;align-items:center;margin-bottom:65px}.logo{display:flex;align-items:center;gap:10px;font-weight:750}.logo-icon{width:36px;height:36px;display:grid;place-items:center;background:#14251f;border:1px solid #245340;border-radius:10px}.badge{color:var(--green);background:#0d1b17;border:1px solid #245340;border-radius:999px;padding:6px 11px;font-size:12px}.hero{max-width:760px;margin:0 auto 40px;text-align:center}.hero h1{margin:0 0 18px;font-size:clamp(40px,6vw,66px);line-height:1.02;letter-spacing:-.055em}.hero h1 span{color:var(--green)}.hero p{max-width:650px;margin:0 auto;color:var(--muted);font-size:17px;line-height:1.6}.upload{width:100%;max-width:760px;min-height:320px;margin:auto;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:45px 25px;text-align:center;cursor:pointer;border:1px dashed #405067;border-radius:24px;background:linear-gradient(145deg,#161f2c,#0b1018);transition:.2s}.upload:hover,.upload.drag{border-color:var(--green);background:#101d19;transform:translateY(-2px)}.upload-icon{width:62px;height:62px;margin:0 0 18px;display:grid;place-items:center;background:#14251f;border-radius:18px;font-size:28px}.upload h2{margin:0 0 8px;font-size:21px}.upload p{margin:0 0 23px;color:var(--muted)}.file-button{display:flex;align-items:center;justify-content:center;width:max-content;padding:12px 21px;border-radius:10px;background:var(--green);color:#06110c;font-weight:750}input[type=file]{display:none}.privacy{margin-top:17px;color:#667487;font-size:12px}.message{max-width:760px;margin:18px auto}.error{padding:14px;background:#291518;border:1px solid #653039;border-radius:12px;color:#ff9c9c}.success{padding:14px;background:#10231c;border:1px solid #245340;border-radius:12px;color:#a9f0cf}#results{display:none;margin-top:55px}.result-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:18px}.result-head h2{margin:0;font-size:28px}.filename{margin-top:5px;color:var(--muted);font-size:13px}.repair-status{margin-top:8px;display:inline-flex;align-items:center;gap:7px;padding:6px 10px;border-radius:999px;background:#102c21;border:1px solid #245340;color:var(--green);font-size:12px;font-weight:700}.health-note{margin-top:10px;color:var(--muted);font-size:12px}.actions{display:flex;gap:8px;flex-wrap:wrap}.btn{padding:10px 14px;border:1px solid var(--border);border-radius:9px;background:var(--panel);color:var(--text);cursor:pointer}.btn:hover{background:var(--panel2)}.btn:disabled{opacity:.45;cursor:not-allowed}.btn:disabled:hover{background:var(--panel)}.btn.primary{color:var(--green);border-color:#245340;background:#12221d}.health-summary{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:15px}.health-card{padding:18px 20px;background:var(--panel);border:1px solid var(--border);border-radius:15px}.health-card-label{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.06em}.health-card-value{margin-top:5px;font-size:28px;font-weight:800}.health-card-sub{margin-top:5px;color:var(--muted);font-size:12px;line-height:1.45}.health-card.ok{border-color:#245340}.health-card.warn{border-color:#5b4a21}@media(max-width:760px){.health-summary{grid-template-columns:1fr}}
@@ -32,12 +32,12 @@
 </head>
 <body>
 <div class="app">
-<header class="header"><div class="logo"><div class="logo-icon">📡</div><div>ADIF HAM Analyzer Pro(DEMO) by DG9SR</div></div><div style="display:flex;align-items:center;gap:12px"><div class="badge">100% lokal · kostenlos</div><button id="infoBtn" class="btn" style="padding:8px 12px;font-size:13px" title="Info & Datenschutz">ℹ️ Info</button></div></header>
-<section class="hero"><h1>Dein Log.<br><span>Wir reparieren es sauber.</span></h1><p>ADIF-Datei analysieren, konvertieren sowie Formatfehler erkennen und ausschließlich eindeutige Strukturfehler sicher direkt im Browser reparieren – ohne QSO-Inhalte umzuschreiben.</p></section>
+<header class="header"><div class="logo"><div class="logo-icon">📡</div><div>HAM-ADIF Analyzer Pro(BETA.v8/26) by (c)DG9SR</div></div><div style="display:flex;align-items:center;gap:12px"><div class="badge">100% lokal · kostenlos</div><button id="infoBtn" class="btn" style="padding:8px 12px;font-size:13px" title="Info & Datenschutz">ℹ️ Info & Kontakt</button></div></header>
+<section class="hero"><h1>Dein HAM Log.<br><span>Struktur-Reparatur.</span></h1><p>ADIF-Dateien analysieren, konvertieren und Formatfehler erkennen. Eindeutige Strukturfehler direkt im Browser reparieren – ohne QSO-Inhalte umzuschreiben. Für eine breite Palette von ADIF-Dateien und Logbuch-Anwendungen.</p></section>
 <label class="upload" id="upload"><input type="file" id="file" accept=".adi,.adif,.txt"><div class="upload-icon">📂</div><h2>ADIF-Datei hier ablegen</h2><p>oder Datei auf deinem Rechner auswählen</p><span class="file-button">Datei auswählen</span><div class="privacy">🔒 Die Datei verlässt deinen Rechner nicht.</div></label>
 <div class="message" id="message"></div>
 <section id="results">
-<div class="print-title"><h1>ADIF HAM Analyzer Pro by DG9SR – Analysebericht</h1><p id="printMeta"></p></div>
+<div class="print-title"><h1>HAM-ADIF Analyzer Pro(BETA.v8/26) by (c)DG9SR – Analysebericht</h1><p id="printMeta"></p></div>
 <div class="result-head"><div><h2>Log-Analyse</h2><div class="filename" id="filename"></div><div id="repairStatus"></div></div><div class="actions"><button class="btn" id="reset">Neue Datei</button></div></div>
 <div class="health-summary"><div class="health-card" id="structureCard"><div class="health-card-label">Struktur</div><div class="health-card-value" id="structureScore">—</div><div class="health-card-sub" id="structureNote">Wird geprüft.</div></div><div class="health-card" id="logHealthCard"><div class="health-card-label">Log Health</div><div class="health-card-value" id="logHealthScore">—</div><div class="health-card-sub" id="logHealthNote">Offene fachliche Warnungen.</div></div></div>
 <div class="health"><div class="health-top"><div class="health-title"><div class="health-icon">🩺</div><div><h3>Log Health</h3><div class="health-sub">Health zeigt offene echte Warnungen. SAFE kann repariert werden; Hinweise werden nur angezeigt.</div></div></div><div class="score" id="healthScore">100%</div></div><div class="issue-list" id="issues"></div><div class="health-note" id="healthNote"></div></div>
@@ -54,30 +54,95 @@
 <!-- INFO MODAL -->
 <div class="modal-overlay" id="infoModal">
   <div class="modal-content">
+
     <div class="modal-header">
-      <h2>Info & Datenschutz</h2>
+      <h2>Info & Datenschutz/Kontakt</h2>
       <button class="modal-close" id="closeInfoBtn">&times;</button>
     </div>
-    <div class="modal-body">
-      <h3>Haftungsausschluss</h3>
-      <p>Dieses Tool ist ein <strong>privates Hobby-Projekt</strong> des Amateurfunks und wird „as is“ (in dem Zustand, in dem es sich befindet) ohne jegliche Gewährleistung oder Garantie bereitgestellt. Der Entwickler übernimmt keine Haftung für:</p>
-      <ul>
-        <li>Datenverlust oder Beschädigung von Logdateien.</li>
-        <li>Fehler in der Analyse oder Reparaturlogik.</li>
-        <li>Sach- oder Folgeschäden, die durch die Nutzung dieses Tools entstehen.</li>
-      </ul>
-      <p>Die Nutzung erfolgt ausschließlich auf eigene Verantwortung. Der Entwickler haftet nicht für direkte oder indirekte Schäden.</p>
 
-      <h3>Datenschutz & Privatsphäre</h3>
-      <p><strong>1. 100% Lokale Verarbeitung:</strong> Alle Analysen, Berechnungen und Reparaturen finden ausschließlich in deinem Browser (Client-Side) statt. Deine ADIF-Datei wird niemals an einen Server gesendet.</p>
-      <p><strong>2. Keine Datenspeicherung:</strong> Dieses Script speichert keine persönlichen Daten, Rufzeichen oder Logeinträge auf einem externen Server. Es werden keine Cookies zu Tracking-Zwecken gesetzt.</p>
-      <p><strong>3. Serverseitige Hinweise:</strong> Sollte dieses Tool auf einem Webserver gehostet werden, können die Server-Logs (Webserver-Logs) standardmäßig technische Zugriffsdaten (IP-Adresse, User-Agent, Timestamp) erfassen. Dies liegt außerhalb der Kontrolle des Scripts und unterliegt den allgemeinen Bestimmungen des Providers.</p>
-      <p><strong>4. Integrität:</strong> Durch die SHA-256 Hash-Funktion wird sichergestellt, dass QSO-Inhalte vor und nach einer eventuellen Reparatur identisch sind.</p>
+    <div class="modal-body">
+
+      <h3>Haftungsausschluss / Kontakt</h3>
+
+<p>
+  Dieser <strong>ADIF HAM Analyzer Pro(BETAv.8/26)</strong> ist ein privates Hobbyprojekt
+  zur Analyse und Reparatur fehlerhafter ADIF-Dateien aus Logbuch-Software.
+</p>
+
+<ul>
+  <li>Privates HAM Hobby-Projekt von DG9SR OP: Sven</li>
+  <li>Kontakt: DG9SR (ÄT) WEB (PUNKT) DE</li>
+</ul>
+
+<p>
+  Das Tool ist ausschließlich für nicht-kommerzielle Amateurfunk-Anwendungen
+  bestimmt und wird <strong>„as is“</strong>, also in der jeweils bereitgestellten
+  Form und ohne Garantie für Fehlerfreiheit oder Verfügbarkeit, zur Verfügung gestellt.
+</p>
+
+<p>
+  Die Nutzung erfolgt auf eigene Verantwortung. Der Entwickler übernimmt,
+  soweit gesetzlich zulässig, keine Verantwortung für:
+</p>
+
+<ul>
+  <li>Datenverlust oder Beschädigung von Logdateien.</li>
+  <li>Fehler in der Analyse- oder Reparaturlogik.</li>
+  <li>Fehlerhafte oder unvollständige Reparaturergebnisse.</li>
+  <li>Sach- oder Folgeschäden, die durch die Nutzung des Tools entstehen können.</li>
+</ul>
+
+<p>
+  <strong>Wichtig:</strong> Vor der Verwendung sollte immer eine Sicherungskopie
+  der Original-ADIF-Datei erstellt werden. Reparaturen sollten grundsätzlich
+  nur mit einer Kopie der Originaldatei durchgeführt werden.
+</p>
+
+<h3>Datenschutz &amp; Privatsphäre</h3>
+
+<p>
+  <strong>1. Lokale Verarbeitung:</strong>
+  Die Verarbeitung der ausgewählten ADIF-Datei sowie sämtliche Analysen,
+  Berechnungen und Reparaturen erfolgen ausschließlich lokal in deinem Browser
+  (Client-Side). Der Inhalt der ADIF-Datei wird durch das Script nicht an einen
+  Server übertragen.
+</p>
+
+<p>
+  <strong>2. Keine Speicherung von Logdaten:</strong>
+  Dieses Script speichert keine persönlichen Daten, Rufzeichen, QSO-Daten oder
+  sonstigen Inhalte der ADIF-Datei auf einem vom Tool betriebenen externen Server.
+  Durch das Script werden keine Cookies zu Tracking-Zwecken gesetzt.
+</p>
+
+<p>
+  <strong>3. Serverseitige Hinweise:</strong>
+  Dieses Tool wird über GitHub bereitgestellt. Beim Aufruf der Website können
+  durch den Hosting-Anbieter technische Zugriffsdaten, beispielsweise IP-Adresse,
+  User-Agent und Zeitpunkt des Zugriffs, verarbeitet oder protokolliert werden.
+  Dies erfolgt unabhängig von der Verarbeitung der ADIF-Datei durch das Tool und
+  liegt außerhalb des Einflussbereichs dieses Scripts.
+</p>
+
+<p>
+  <strong>4. Integritätsprüfung:</strong>
+  Sofern eine SHA-256-Prüfsumme verwendet wird, kann damit überprüft werden,
+  ob sich die QSO-Inhalte zwischen dem ursprünglichen und dem reparierten
+  Datenbestand verändert haben.
+</p>
+
+<p>
+  <strong>5. Keine Garantie für die Reparatur:</strong>
+  Trotz sorgfältiger Entwicklung kann nicht garantiert werden, dass jede
+  ADIF-Datei vollständig oder korrekt erkannt bzw. repariert werden kann.
+  Bitte überprüfe das Ergebnis nach jeder Reparatur und bewahre die
+  Originaldatei als Backup auf.
+</p>
     </div>
   </div>
 </div>
-
 <script>
+
 "use strict";
 const APP_VERSION="3.0.0-final-verified";
 const REPAIR_MARKER="APP_ADIFANALYZER_REPAIRED";
